@@ -1,15 +1,15 @@
-# cad-template
+# Leafony KiCad Template
 
 This repository is a template library of Leafony PCB design.
 
 ![brd.png](img/brd.png)
 
 ## Supported CAD tools
-* KiCad 5.0.0 or later
-* Leafony_Template is for KiCad 5.x.x
-* Leafony_Template_V6 is for KiCad 6.x.x
+
+* KiCad 6.0.0 or later
 
 ## Usage
+
 ### KiCad
 
 1. Open KiCad.
@@ -17,4 +17,5 @@ This repository is a template library of Leafony PCB design.
 1. `Browse` this repository and select Leafony template.
 
 ## License
+
 MIT
