@@ -1,26 +1,47 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
-<HTML>
+<HTML LANG="ja">
 <HEAD>
-<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=windows-1252">
-<title>Leafony Leaf</title>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=UTF-8">
+<TITLE>Leafony Leaf</TITLE>
 </HEAD>
-<h1>Leafony Leaf</h1>
-<h4>Leaf Template</h4>
-<P>This project template is the basis of an expansion leaf for the
-<A HREF="https://leafony.com/" TARGET="blank">Leafony</A> <BR><BR>
-and includes both printed circuit board and schematic templates. <BR>
-<h4>PCB Template</h4>    
-The PCB template features the same dimensions as <BR> 
-other Leafony Leaves and includes a unified connector <BR>
-to interface with other Leaves. <BR> 
-<h4>Schematic Template</h4>  
-The schematic template includes the connectors corresponding symbol <BR>
-and purpose based pin naming. <BR><BR>
+<BODY>
+<H1>Leafony Leaf</H1>
+<P>Leafonyの拡張リーフを設計するためのKiCad 10.0用プロジェクトテンプレートです。<BR>
+A KiCad 10.0 project template for designing Leafony expansion leaves.</P>
 
+<H3>収録内容 / Included in this template</H3>
+<UL>
+<LI><B>PCB:</B> 基板外形、Leafony bus接続部、取り付け穴、銅箔ゾーン禁止領域、デザインルール。<BR>
+Board outline, Leafony bus contacts, mounting holes, copper zone keepouts, and design rules.</LI>
+<LI><B>回路図 / Schematic:</B> Leafony busシンボル、電源、信号名ラベル。<BR>
+Leafony bus symbol, power connections, and signal labels.</LI>
+<LI><B>ライブラリ / Libraries:</B> Leafony busのシンボルとフットプリント。<BR>
+Leafony bus symbol and footprint libraries.</LI>
+</UL>
 
-Below graphic  illustrates the pcb template:
-</P>
-<P><IMG SRC="brd.png" NAME="brd" ALIGN=BOTTOM WIDTH=417 HEIGHT=450
-BORDER=0><BR><BR><BR><BR>
-</P>
-<P>&copy; 2022 LEAFONY SYSTEMS Co., Ltd<BR></P>
+<H3>基板仕様 / Board specifications</H3>
+<TABLE BORDER="0" CELLPADDING="4" CELLSPACING="0">
+<TR><TD><B>銅層 / Copper layers</B></TD><TD>4 (F.Cu / In1.Cu / In2.Cu / B.Cu)</TD></TR>
+<TR><TD><B>基板厚 / Board thickness</B></TD><TD>0.8 mm</TD></TR>
+<TR><TD><B>接続部 / Bus contacts</B></TD><TD>CN1: F1-F29 / B1-B29</TD></TR>
+</TABLE>
+<P><IMG SRC="brd.png" WIDTH="400" STYLE="max-width: 100%; height: auto;" BORDER="0" ALT="Leafony expansion leaf PCB"></P>
+<P>同梱のPCBデータから生成した3Dプレビュー。<BR>
+3D preview rendered from the included PCB file.</P>
+
+<H3>使い始める / Getting started</H3>
+<P>KiCad 10.0と標準ライブラリを使用してください。新規プロジェクトの作成後、プロジェクト固有のシンボルライブラリに
+<CODE>lib/Leafony.kicad_sym</CODE>を<CODE>Leafony</CODE>の名前で登録します。
+フットプリントライブラリは登録済みです。<BR>
+Use KiCad 10.0 with its standard libraries. After creating a project, register
+<CODE>lib/Leafony.kicad_sym</CODE> as <CODE>Leafony</CODE> in the project-specific symbol library table.
+The footprint library is already registered.</P>
+<P><A HREF="https://github.com/leafony/cad-template/blob/main/KiCad/README.md">設定・利用手順 / Setup and usage</A><BR>
+<A HREF="https://docs.leafony.com/pcb/">自作リーフ開発 / Custom leaf development</A><BR>
+<A HREF="https://github.com/leafony">Leafony on GitHub</A></P>
+
+<HR>
+<P>開発・販売 / Developed and distributed by <A HREF="https://mitdir.jp/">mitdir Inc.</A><BR>
+&copy; 2026 mitdir Inc.</P>
+</BODY>
+</HTML>
